@@ -14,6 +14,7 @@ Load Page
 	});
 
 
+
 /*-------------------------------------------
 Ajax link page transitions
 ---------------------------------------------*/
@@ -42,12 +43,11 @@ Ajax link page transitions
             $('#ajax-content').html($(data).filter('#ajax-content').html());
             $('#ajax-sidebar').html($(data).filter('#ajax-sidebar').html());
 
-
 						$('body').waitForImages({
 							finished: function() {
 								Website();
 								backLoading();
-								$('.fat-nav').delay(50).fadeOut(600);
+								$('.opacity-nav').delay(50).fadeOut(600);
               },										
               waitForAll: true
 						});								
